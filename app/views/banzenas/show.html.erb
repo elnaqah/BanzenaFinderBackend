@@ -1,0 +1,95 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @banzena.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @banzena.description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @banzena.address %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @banzena.telephone %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @banzena.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @banzena.latitude %>
+</p>
+
+<p>
+  <b>Has 80?:</b>
+  <%= @banzena.has_80? %>
+</p>
+
+<p>
+  <b>Has 90?:</b>
+  <%= @banzena.has_90? %>
+</p>
+
+<p>
+  <b>Has 92?:</b>
+  <%= @banzena.has_92? %>
+</p>
+
+<p>
+  <b>Has 95?:</b>
+  <%= @banzena.has_95? %>
+</p>
+
+<p>
+  <b>Has gas?:</b>
+  <%= @banzena.has_gas? %>
+</p>
+
+<p>
+  <b>Has solar?:</b>
+  <%= @banzena.has_solar? %>
+</p>
+
+<p>
+  <b>Counter 80:</b>
+  <%= @banzena.counter_80 %>
+</p>
+
+<p>
+  <b>Counter 90:</b>
+  <%= @banzena.counter_90 %>
+</p>
+
+<p>
+  <b>Counter 92:</b>
+  <%= @banzena.counter_92 %>
+</p>
+
+<p>
+  <b>Counter 95:</b>
+  <%= @banzena.counter_95 %>
+</p>
+
+<p>
+  <b>Counter gas:</b>
+  <%= @banzena.counter_gas %>
+</p>
+
+<p>
+  <b>Counter solar:</b>
+  <%= @banzena.counter_solar %>
+</p>
+
+
+<%= link_to 'Edit', edit_banzena_path(@banzena) %> |
+<%= link_to 'Back', banzenas_path %>

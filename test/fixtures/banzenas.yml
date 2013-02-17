@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  address: MyString
+  telephone: MyString
+  longitude: 1.5
+  latitude: 1.5
+  has_80?: false
+  has_90?: false
+  has_92?: false
+  has_95?: false
+  has_gas?: false
+  has_solar?: false
+  counter_80: 1
+  counter_90: 1
+  counter_92: 1
+  counter_95: 1
+  counter_gas: 1
+  counter_solar: 1
+
+two:
+  name: MyString
+  description: MyText
+  address: MyString
+  telephone: MyString
+  longitude: 1.5
+  latitude: 1.5
+  has_80?: false
+  has_90?: false
+  has_92?: false
+  has_95?: false
+  has_gas?: false
+  has_solar?: false
+  counter_80: 1
+  counter_90: 1
+  counter_92: 1
+  counter_95: 1
+  counter_gas: 1
+  counter_solar: 1

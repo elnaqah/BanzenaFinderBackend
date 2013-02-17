@@ -1,0 +1,89 @@
+<%= form_for(@banzena) do |f| %>
+  <% if @banzena.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@banzena.errors.count, "error") %> prohibited this banzena from being saved:</h2>
+
+      <ul>
+      <% @banzena.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :has_80? %><br />
+    <%= f.check_box :has_80? %>
+  </div>
+  <div class="field">
+    <%= f.label :has_90? %><br />
+    <%= f.check_box :has_90? %>
+  </div>
+  <div class="field">
+    <%= f.label :has_92? %><br />
+    <%= f.check_box :has_92? %>
+  </div>
+  <div class="field">
+    <%= f.label :has_95? %><br />
+    <%= f.check_box :has_95? %>
+  </div>
+  <div class="field">
+    <%= f.label :has_gas? %><br />
+    <%= f.check_box :has_gas? %>
+  </div>
+  <div class="field">
+    <%= f.label :has_solar? %><br />
+    <%= f.check_box :has_solar? %>
+  </div>
+  <div class="field">
+    <%= f.label :counter_80 %><br />
+    <%= f.number_field :counter_80 %>
+  </div>
+  <div class="field">
+    <%= f.label :counter_90 %><br />
+    <%= f.number_field :counter_90 %>
+  </div>
+  <div class="field">
+    <%= f.label :counter_92 %><br />
+    <%= f.number_field :counter_92 %>
+  </div>
+  <div class="field">
+    <%= f.label :counter_95 %><br />
+    <%= f.number_field :counter_95 %>
+  </div>
+  <div class="field">
+    <%= f.label :counter_gas %><br />
+    <%= f.number_field :counter_gas %>
+  </div>
+  <div class="field">
+    <%= f.label :counter_solar %><br />
+    <%= f.number_field :counter_solar %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

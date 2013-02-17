@@ -1,0 +1,2 @@
+module BanzenasHelper
+end

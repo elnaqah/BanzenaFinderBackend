@@ -1,0 +1,57 @@
+<h1>Listing banzenas</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Telephone</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
+    <th>Has 80?</th>
+    <th>Has 90?</th>
+    <th>Has 92?</th>
+    <th>Has 95?</th>
+    <th>Has gas?</th>
+    <th>Has solar?</th>
+    <th>Counter 80</th>
+    <th>Counter 90</th>
+    <th>Counter 92</th>
+    <th>Counter 95</th>
+    <th>Counter gas</th>
+    <th>Counter solar</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @banzenas.each do |banzena| %>
+  <tr>
+    <td><%= banzena.name %></td>
+    <td><%= banzena.description %></td>
+    <td><%= banzena.address %></td>
+    <td><%= banzena.telephone %></td>
+    <td><%= banzena.longitude %></td>
+    <td><%= banzena.latitude %></td>
+    <td><%= banzena.has_80? %></td>
+    <td><%= banzena.has_90? %></td>
+    <td><%= banzena.has_92? %></td>
+    <td><%= banzena.has_95? %></td>
+    <td><%= banzena.has_gas? %></td>
+    <td><%= banzena.has_solar? %></td>
+    <td><%= banzena.counter_80 %></td>
+    <td><%= banzena.counter_90 %></td>
+    <td><%= banzena.counter_92 %></td>
+    <td><%= banzena.counter_95 %></td>
+    <td><%= banzena.counter_gas %></td>
+    <td><%= banzena.counter_solar %></td>
+    <td><%= link_to 'Show', banzena %></td>
+    <td><%= link_to 'Edit', edit_banzena_path(banzena) %></td>
+    <td><%= link_to 'Destroy', banzena, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Banzena', new_banzena_path %>
