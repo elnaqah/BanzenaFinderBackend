@@ -7,12 +7,12 @@ class CreateBanzenas < ActiveRecord::Migration
       t.string :telephone
       t.float :longitude
       t.float :latitude
-      t.boolean :has_80?
-      t.boolean :has_90?
-      t.boolean :has_92?
-      t.boolean :has_95?
-      t.boolean :has_gas?
-      t.boolean :has_solar?
+      t.boolean :has_80
+      t.boolean :has_90
+      t.boolean :has_92
+      t.boolean :has_95
+      t.boolean :has_gas
+      t.boolean :has_solar
       t.integer :counter_80
       t.integer :counter_90
       t.integer :counter_92

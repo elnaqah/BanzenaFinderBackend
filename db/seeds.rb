@@ -5,8 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-banzenas=[{name: "Mobil", description: "", address: "Rabaa Al Adaweyah Nasr City, Cairo Governorate", telephone: "02 22615171", longitude: 30.067966, latitude: 31.320828, has_80?: false, has_90?: false, has_92?: true, has_95?: true, has_gas?: false, has_solar?: false},
-{name: "Caltex", description: "", address: "Al Manteqah Al Oula Nasr City, Cairo Governorate", telephone: "02 22606707", longitude: 30.053747, latitude: 31.338505, has_80?: false, has_90?: false, has_92?: true, has_95?: true, has_gas?: false, has_solar?: false}]
-banzenas.each do |dic|
-	Banzena.create!(dic)
-end
+banzenas=[{name: "Mobil", description: "", address: "Rabaa Al Adaweyah Nasr City, Cairo Governorate", telephone: "02 22615171", longitude: 30.067966, latitude: 31.320828, has_80: false, has_90: false, has_92: true, has_95: true, has_gas: false, has_solar: false,counter_80: 0, counter_90: 0, counter_92: 0, counter_95: 0, counter_gas: 0, counter_solar: 0},
+{name: "Caltex", description: "", address: "Al Manteqah Al Oula Nasr City, Cairo Governorate", telephone: "02 22606707", longitude: 30.053747, latitude: 31.338505, has_80: false, has_90: false, has_92: true, has_95: true, has_gas: false, has_solar: false,counter_80: 0, counter_90: 0, counter_92: 0, counter_95: 0, counter_gas: 0, counter_solar: 0}]
+
+Banzena.create!(banzenas)
