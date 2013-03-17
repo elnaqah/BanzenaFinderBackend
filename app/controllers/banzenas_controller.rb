@@ -80,4 +80,10 @@ class BanzenasController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+#banzenas_name
+  def banzenas_name
+    @banzena=Banzena.banzenas_name
+    render json:@banzena
+  end
 end
